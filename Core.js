@@ -1485,13 +1485,13 @@ if (isBanChat) return reply(mess.banChat)
 reply(` Don't forget to join yeah!
 
 *GROUP 1*
-https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS
+https://chat.whatsapp.com/Kavk1EZxrOTLZ8QCkuQCem
 
 *GROUP 2*
-https://chat.whatsapp.com/LS1Xx3fSqg7FpSYSjKWhL5
+https://chat.whatsapp.com/Kavk1EZxrOTLZ8QCkuQCem
 
 *GROUP 3*
-https://chat.whatsapp.com/EcycNbJFCVT5ZsG9xIGkqd`)
+https://chat.whatsapp.com/Kavk1EZxrOTLZ8QCkuQCem
 break
 case 'getsxvdxcmd': {
 if (isBan) return reply(mess.ban)	 			
@@ -1505,12 +1505,12 @@ break
 
 case 'support': case 'supportgc':
     
-    reply(`*My developer's group:* http://gg.gg/MikuSupport`)
+    reply(`*My developer's group:* https://giveit.link/gingerbreadsketchy`)
     break
 
 case 'repo': case 'botrepo':
     
-    reply(`*My Source Code:* https://github.com/GingerBreadSketchy001/Miku-MD`)
+    reply(`*My Source Code:* https://github.com/GingerBreadSketchy`)
     break
 
 case 'nsfwmenu':
@@ -3320,7 +3320,7 @@ case 'play2': case 'ytplay2': {
                     ]
                     let buttonMessage = {
                         image: { url: anu.thumbnail},
-                        caption: `「 _Miku Youtube Player_ 」
+                        caption: `「 _Sketchy Youtube Player_ 」
 
     Title : ${anu.title}
     ID : ${anu.videoId}
@@ -3346,7 +3346,7 @@ case 'ytdl2': case 'yt2': case 'youtube2':{
 if (!args[0]) return reply(mess.nolink)
 try {
 hx.youtube(args[0]).then(async(res) => {
-textyt = `「 _Miku Youtube Downloader_ 」
+textyt = `「 _Sketchy Youtube Downloader_ 」
 Title : ${res.title}
 Size : ${res.size}
 Quality : ${res.quality}
@@ -3384,7 +3384,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
- caption: `「  _Miku Youtube Player_  」
+ caption: `「  _Sketchy Youtube Player_  」
 
 *Title :* ${anu.title}
 *Duration :* ${anu.timestamp}
@@ -3407,7 +3407,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  if (!args[0]) return reply(mess.nolink)
  try {
  hx.youtube(args[0]).then(async(res) => {
- textyt = `「  _Miku Youtube Downloader_  」
+ textyt = `「  _Sketchy Youtube Downloader_  」
 *Title :* ${res.title}
 *Size :* ${res.size}
 *Quality :* ${res.quality}
@@ -4810,7 +4810,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Yawa *${pushname}* mayai,
+ const helpmenu = `Yawa *${pushname}* How are u,
 
 I am *Murife*, a bot developed by *GingerBreadSketchy*.
 
@@ -5018,7 +5018,7 @@ case 'add':{
         if (isBanChat) return reply(mess.bangc)
         if (!m.isGroup) return replay(mess.grouponly)
     reply(`Running repl....Please wait until repl.it responds...`)						
-    var replqr =  await getBuffer(`https://miku-qr--GingerBreadSketchy001.repl.co/`)
+    var replqr =  await getBuffer(`https://miku-qr--GingerBreadSketchy.repl.co/`)
                                var qrbutton = [
             {buttonId: `-qr`, buttonText: {displayText: `Re-run Repl`}, type: 1}
             ]
