@@ -1485,13 +1485,7 @@ if (isBanChat) return reply(mess.banChat)
 reply(` Don't forget to join yeah!
 
 *GROUP 1*
-https://chat.whatsapp.com/Kavk1EZxrOTLZ8QCkuQCem
-
-*GROUP 2*
-https://chat.whatsapp.com/Kavk1EZxrOTLZ8QCkuQCem
-
-*GROUP 3*
-https://chat.whatsapp.com/Kavk1EZxrOTLZ8QCkuQCem
+https://chat.whatsapp.com/IYzLWgOtmOdCbDyrgpAT1T`)
 break
 case 'getsxvdxcmd': {
 if (isBan) return reply(mess.ban)	 			
@@ -1505,7 +1499,7 @@ break
 
 case 'support': case 'supportgc':
     
-    reply(`*My developers group* giveit.link/gingerbreadsketchy')
+    reply(`*My developer's group:* http://gg.gg/sketchySupport`)
     break
 
 case 'repo': case 'botrepo':
@@ -4810,9 +4804,9 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Yawa *${pushname}* How are u,
+ const helpmenu = `Hello *${pushname}* How are y,
 
-I am *Murife*, a bot developed by *GingerBreadSketchy*.
+I am *SKETCHY*, a bot developed by *GingerBreadSketchy*.
 
 🔰 My prefix is:  ${prefix}
 
