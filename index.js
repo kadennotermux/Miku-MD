@@ -18,7 +18,7 @@ const { color } = require('./lib/color')
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 async function startMiku() {
-console.log(color(figlet.textSync('Miku Bot MD', {
+console.log(color(figlet.textSync('Sketchy MD', {
 		font: 'Pagga',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -26,14 +26,14 @@ console.log(color(figlet.textSync('Miku Bot MD', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHello, I am Ginger, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
-console.log(color('\nYou can follow me on GitHub: Ginger1','aqua'))
+console.log(color('\nHello, I am Sketchy, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
+console.log(color('\nYou can follow me on GitHub: Sketchy001','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Miku by: Ginger','Safari','1.0.0'],
+        browser: ['Miku by: Sketchy','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -148,15 +148,13 @@ Miku.ev.on('group-participants.update', async (anu) => {
             
                 if (anu.action == 'add') {
                 let WAuserName = num
-                mikutext ='╭────────────────
+                mikutext = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *Sketchy Bot*, Welcome to ${metadata.subject}.
+I am *SketchyBot*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
-❰⛊𝚂𝙺𝙴𝚃𝙲𝙷𝚈 𝙱𝙾𝚃⛊❱ 
-╰────────────────
 `
 
     let buttonMessage = {
@@ -169,14 +167,12 @@ ${metadata.desc}
 Miku.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	let WAuserName = num
-                    mikutext =`╭────────────────
- │   
- │ ByeBye 👋, @${WAuserName.split("@")[0]}, 
- │
- │ hope you will come back soon, but we are not going to miss you though! 
- │❰⛊𝚂𝙺𝙴𝚃𝙲𝙷𝚈 𝙱𝙾𝚃⛊❱ 
- ╰────────────────
+                    mikutext = `
+ByeBye 👋, @${WAuserName.split("@")[0]},
+
+I hope you will come back soon, but we are not going to miss you though!
 `
+
     let buttonMessage = {
 	image:await getBuffer(ppuser),
     mentions: [num],
