@@ -4804,90 +4804,185 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Hello *${pushname}* How are y,
-
-I am *SKETCHY*, a bot developed by *GingerBreadSketchy*.
-
-🔰 My prefix is:  ${prefix}
-
-Here's the list of my Commands.
-
-
- 
- *━━━〈  🎆 Core 🎆  〉━━━*
-
-speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script 
- 
- *━━━〈  🎀 Owner 🎀  〉━━━*
-
-self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
-
- *━━━〈  ⭕ Group ⭕  〉━━━*
- 
-promote, demote, revoke, add, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
-
- *━━━〈  ➰ Anti Link ➰  〉━━━*
- 
-antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
-
- *━━━〈  🔍 Search 🔍  〉━━━*
-
-play, song, yts, lyrics, google, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone  
-
+ const helpmenu = ` ╭────────────────
+ │❰🐼Sketchy🐼❱
+ ╰───────────────
+ ╭────────────────
+ │ Hello *${pushname}*
+ │ How are you?
+ │ I am *SKETCHY*, a bot
+ │developed by *GingerBreadSketchy*.
+ │
+ │   🔰 My prefix is:  ${prefix}
+ │
+ │Here's the list of my Commands.
+ ╰────────────────
+ *━━━〈  🎆 Core 🎆  〉━━━*  
+ ╭────────────────
+ │    
+ │▷ .help  
+ │▷ .stalk
+ │▷ .profile
+ │▷ .alive
+ │▷ .menu [ advance menu ]
+ │▷ .delete, deleteall
+ │▷ .listgc, listpc
+ │▷ .script ,support, repo
+ ╰────────────────
  *━━━〈  🔰 Convert 🔰  〉━━━*
+ ╭────────────────
+ │▷ .sticker
+ │▷ .toimg
+ │▷ .tovideo
+ │▷ .togif
+ │▷ .steal
+ │▷ .stickermeme
+ │▷ .emojimix
+ │▷ .tourl
+ │▷ .tomp3
+ │▷ .toaudio
+ │
+ ╰────────────────
+ *━━━〈  🎀 Owner 🎀  〉━━━*
+ ╭────────────────
+ │
+ │▷ .self
+ │▷ .public
+ │▷ .ban
+ │▷ .bangroup
+ │▷ .bye
+ │▷ .join
+ │▷ .block
+ │▷ .unblock
+ │▷ .broadcast 
+ │▷ .byebye
+ │
+ ╰────────────────
+ *━━━〈  🌌 Downloader 🌌  〉━━━*
+ ╭────────────────
+ │
+ │▷ .ytmp3
+ │▷ .ytmp4
+ │▷ .ytvideo
+ │▷ .mediafire
+ │▷ .instagram
+ │▷ .igtv
+ │▷ .facebook, fbmp3
+ │▷ .twitter, twittermp3
+ │▷ .tiktokaudio, tiktoknowm
+ │▷ .play
+ │
+ ╰────────────────
+ *━━━〈  ⭕ Group ⭕  〉━━━*
+ ╭────────────────
+ │▷ .promote     
+ │▷ .demote
+ │▷ .revoke
+ │▷ .remove
+ │▷ .tagall
+ │▷ .report
+ │▷ .hidetag
+ │▷ .groupsetting
+ │▷ .grouplink
+ │▷ .setgcpp
+ │▷ .setname
+ │▷ .setdesc
+ │▷ .group
+ │▷ .nsfw 
+ │▷ .ban [ for owner ]
+ │▷ .add [ for owner ]
+ │
+ ╰────────────────
+ *━━━〈  ➰ Anti Link ➰  〉━━━*
 
-sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
-
- *━━━〈  🔉 Audio 🔉  〉━━━*
-
-bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
-
+ ╭────────────────
+ │▷ .antilinkgc  
+ │▷ .antilinktg
+ │▷ .antilinktt
+ │▷ .antilinkytch
+ │▷ .antilinkytvid
+ │▷ .antilinkig  
+ │▷ .antilinkfb    
+ │▷ .antilinktwit 
+ │▷ .antilinkall      
+ │▷ .antiwame      
+ ╰────────────────
  *━━━〈  📍 Reactions 📍  〉━━━*
 
-bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
-
- *━━━〈  🌌 Downloader 🌌  〉━━━*
-
-play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
-
+ ╭────────────────
+ │▷ .bonk, cry, bully 
+ │▷ .cuddle, hug, kiss
+ │▷ .lick, pat, smug
+ │▷ .yeet, blush, smile
+ │▷ .wave, highfive, handhold
+ │▷ .nom, glomp, bite 
+ │▷ .slap, kill, happy   
+ │▷ .wink, poke
+ │▷ .dance    
+ │▷ .cringe    
+ ╰────────────────
+ ╭────────────────
+ │    🔰👿 Search 👿🔰
+ │
+ │▷ .yt { text }
+ │▷ .spoti { text }
+ │▷ .tk { name }
+ │▷ .wiki { text }
+ │▷ .movie { mov name }
+ │▷ .github { name }
+ │▷ .mod { app name }
+ │▷ .weather { city }
+ │
+ ╰────────────────
+ *━━━〈  🔍 Search 🔍  〉━━━*
+ ╭────────────────
+ │▷ .play
+ │▷ .song
+ │▷ .yts
+ │▷ .lyrics
+ │▷ .google
+ │▷ .gimage
+ │▷ .image
+ │▷ .movie
+ │▷ .wallpaper
+ │▷ .happymod
+ │▷ .anime, animestory
+ │▷ .unvoice { mp3 to voice }
+ │▷ .manga, ringtone 
+ ╰────────────────
+  *━━━〈  🎗 Others 🎗  〉━━━*
+ ╭────────────────
+ │   
+ │▷ .animequote
+ │▷ .quote
+ │▷ .anime
+ │▷ .covid 
+ │▷ .darkjoke 
+ │▷ .quotes
+ │▷ .stickermeme,lovelycheck, uglycheck, charactercheck
+ │▷ .reaction,lesbiancheck, hornycheck, prettycheck
+ │▷ .truth,dare, couple, soulmate
+ │▷ .handsomecheck, beautifulcheck, awesomecheck
+ │▷ .greatcheck, gaycheck, cutecheck
+ │
+ ╰────────────────
  *━━━〈  🈴 Weeb 🈴  〉━━━*
-
-crosplay, waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
-
- *━━━〈  ♨️ Informative ♨️  〉━━━*
-
-animequote, quote, covid, earthquake, wiki
-
- *━━━〈  🎗 Others 🎗  〉━━━*
-
-stickermeme, quotes, darkjoke 
-
- *━━━〈  🎐 Fun 🎐  〉━━━*
-
-reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
-
- *━━━〈  🪁 Essentials 🪁  〉━━━*
-
-qr, say, translate, fliptext, toletter
-
- *━━━〈  💥 NSFW 💥  〉━━━*
-
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-
-
-
-
- 『  *${global.BotName}*  』
- Powered by: *GingerBreadSketchy*
-
- 🔰 To use any of these commands type 
- " *${prefix}<Command name>* ".
- 
- 🔰 To get Support Group link type " *${prefix}support* ".
-
- 🔰 Type " *${prefix}help* " to get full command list.`
+ ╭────────────────
+ │▷ .crosplay, waifu     
+ │▷ .loli, neko
+ │▷ .ppcouple, feed
+ │▷ .foxgirl, feed
+ │▷ .meow, tickle
+ │▷ .wallpaper, coffee
+ │▷ .animenom, waifu3
+ │▷ .neko2, feed
+ │▷ .tickle, migumin,
+ │▷ .awoo, animewallpaper2
+ ╰────────────────
+ ╭────────────────
+ │*━━━〈  ❰Sketchy Bot 2022❱〉━━━*
+ ╰───────────────
+ Powered by: *GingerBreadSketchy*`
     
 
  let buttonshelpm = [
