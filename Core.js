@@ -1505,7 +1505,7 @@ break
 
 case 'support': case 'supportgc':
     
-    reply(`*My developer's group:* https://giveit.link/gingerbreadsketchy`)
+    reply(`*My developers group* giveit.link/gingerbreadsketchy')
     break
 
 case 'repo': case 'botrepo':
