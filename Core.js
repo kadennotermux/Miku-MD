@@ -711,7 +711,7 @@ user.afkReason = ''
 
 if (m.mtype === 'groupInviteMessage') {
 teks = `I can't join the group untill my *Owner* ask me to join. Type *-owner* to get owner number and ask him.`
-sendOrder(m.chat, teks, "5123658817728409", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "916909137213@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
+sendOrder(m.chat, teks, "5123658817728409", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "254792893310@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
 }
 
 
@@ -1177,7 +1177,7 @@ let cron = require('node-cron')
                   key: { 
                         fromMe: false,
                        participant: `0@s.whatsapp.net`, ...(from ? 
-                  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+                  { remoteJid: "254792893310-1613049930@g.us" } : {}) 
                                },
                   message: { 
                                 "videoMessage": { 
@@ -1238,7 +1238,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "254792893310-1613049930@g.us" } : {}) 
   },
   message: { 
   "videoMessage": { 
@@ -1259,7 +1259,7 @@ const ftroli = {
   },
   "message": {
   "groupInviteMessage": {
-  "groupJid": "916909137213-1616169743@g.us",
+  "groupJid": "254792893310-1616169743@g.us",
   "inviteCode": `${global.OwnerName}`,
   "groupName": `${global.BotName}`, 
   "caption":`${global.WaterMark}`, 
@@ -1272,7 +1272,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "254792893310-1613049930@g.us" } : {}) 
   },
   message: { 
    "videoMessage": { 
@@ -1290,7 +1290,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "254792893310-1613049930@g.us" } : {}) 
   },
   message: { 
   "extendedTextMessage": {
@@ -1305,7 +1305,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "254792893310-1613049930@g.us" } : {}) 
   },
   message: { 
   "audioMessage": {
@@ -2676,7 +2676,7 @@ let mentioned = participants.map(v => v.jid)
      sizny = res.content[0].attrs.size
      if (sizny < 20) {
      teks = `Sorry, munimun 20 members are required in a group to add bot!`
-     sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "916909137213@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
+     sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "254792893310@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
      } else if (sizny > 20) {
      await Miku.groupAcceptInvite(vcc).then(async(res) => replay(jsonformat(res))).catch(_ => _)
      replay("Joined !")
@@ -4820,167 +4820,167 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
  *━━━〈  🎆 Core 🎆  〉━━━*  
  ╭────────────────
  │    
- │▷ .help  
- │▷ .stalk
- │▷ .profile
- │▷ .alive
- │▷ .menu [ advance menu ]
- │▷ .delete, deleteall
- │▷ .listgc, listpc
- │▷ .script ,support, repo
+ │▷ -help  
+ │▷ -stalk
+ │▷ -profile
+ │▷ -alive
+ │▷ -menu [ advance menu ]
+ │▷ -delete, deleteall
+ │▷ -listgc, listpc
+ │▷ -script ,support, repo
  ╰────────────────
  *━━━〈  🔰 Convert 🔰  〉━━━*
  ╭────────────────
- │▷ .sticker
- │▷ .toimg
- │▷ .tovideo
- │▷ .togif
- │▷ .steal
- │▷ .stickermeme
- │▷ .emojimix
- │▷ .tourl
- │▷ .tomp3
- │▷ .toaudio
+ │▷ -sticker
+ │▷ -toimg
+ │▷ -tovideo
+ │▷ -togif
+ │▷ -steal
+ │▷ -stickermeme
+ │▷ -emojimix
+ │▷ -tourl
+ │▷ -tomp3
+ │▷ -toaudio
  │
  ╰────────────────
  *━━━〈  🎀 Owner 🎀  〉━━━*
  ╭────────────────
  │
- │▷ .self
- │▷ .public
- │▷ .ban
- │▷ .bangroup
- │▷ .bye
- │▷ .join
- │▷ .block
- │▷ .unblock
- │▷ .broadcast 
- │▷ .byebye
+ │▷ -self
+ │▷ -public
+ │▷ -ban
+ │▷ -bangroup
+ │▷ -bye
+ │▷ -join
+ │▷ -block
+ │▷ -unblock
+ │▷ -broadcast 
+ │▷ -remove (KICK Bad Spammers)
  │
  ╰────────────────
  *━━━〈  🌌 Downloader 🌌  〉━━━*
  ╭────────────────
  │
- │▷ .ytmp3
- │▷ .ytmp4
- │▷ .ytvideo
- │▷ .mediafire
- │▷ .instagram
- │▷ .igtv
- │▷ .facebook, fbmp3
- │▷ .twitter, twittermp3
- │▷ .tiktokaudio, tiktoknowm
- │▷ .play
+ │▷ -ytmp3
+ │▷ -ytmp4
+ │▷ -ytvideo
+ │▷ -mediafire
+ │▷ -instagram
+ │▷ -igtv
+ │▷ -facebook, fbmp3
+ │▷ -twitter, twittermp3
+ │▷ -tiktokaudio, tiktoknowm
+ │▷ -play
  │
  ╰────────────────
  *━━━〈  ⭕ Group ⭕  〉━━━*
  ╭────────────────
- │▷ .promote     
- │▷ .demote
- │▷ .revoke
- │▷ .remove
- │▷ .tagall
- │▷ .report
- │▷ .hidetag
- │▷ .groupsetting
- │▷ .grouplink
- │▷ .setgcpp
- │▷ .setname
- │▷ .setdesc
- │▷ .group
- │▷ .nsfw 
- │▷ .ban [ for owner ]
- │▷ .add [ for owner ]
+ │▷ -promote     
+ │▷ -demote
+ │▷ -revoke
+ │▷ -remove
+ │▷ -tagall
+ │▷ -report
+ │▷ -hidetag
+ │▷ -groupsetting
+ │▷ -grouplink
+ │▷ -setgcpp
+ │▷ -setname
+ │▷ -setdesc
+ │▷ -group
+ │▷ -nsfw 
+ │▷ -ban [ for owner ]
+ │▷ -add [ for owner ]
  │
  ╰────────────────
  *━━━〈  ➰ Anti Link ➰  〉━━━*
 
  ╭────────────────
- │▷ .antilinkgc  
- │▷ .antilinktg
- │▷ .antilinktt
- │▷ .antilinkytch
- │▷ .antilinkytvid
- │▷ .antilinkig  
- │▷ .antilinkfb    
- │▷ .antilinktwit 
- │▷ .antilinkall      
- │▷ .antiwame      
+ │▷ -antilinkgc  
+ │▷ -antilinktg
+ │▷ -antilinktt
+ │▷ -antilinkytch
+ │▷ -antilinkytvid
+ │▷ -antilinkig  
+ │▷ -antilinkfb    
+ │▷ -antilinktwit 
+ │▷ -antilinkall      
+ │▷ -antiwame      
  ╰────────────────
  *━━━〈  📍 Reactions 📍  〉━━━*
 
  ╭────────────────
- │▷ .bonk, cry, bully 
- │▷ .cuddle, hug, kiss
- │▷ .lick, pat, smug
- │▷ .yeet, blush, smile
- │▷ .wave, highfive, handhold
- │▷ .nom, glomp, bite 
- │▷ .slap, kill, happy   
- │▷ .wink, poke
- │▷ .dance    
- │▷ .cringe    
+ │▷ -bonk, cry, bully 
+ │▷ -cuddle, hug, kiss
+ │▷ -lick, pat, smug
+ │▷ -yeet, blush, smile
+ │▷ -wave, highfive, handhold
+ │▷ -nom, glomp, bite 
+ │▷ -slap, kill, happy   
+ │▷ -wink, poke
+ │▷ -dance    
+ │▷ -cringe    
  ╰────────────────
  ╭────────────────
- │    🔰👿 Search 👿🔰
+ │   
  │
- │▷ .yt { text }
- │▷ .spoti { text }
- │▷ .tk { name }
- │▷ .wiki { text }
- │▷ .movie { mov name }
- │▷ .github { name }
- │▷ .mod { app name }
- │▷ .weather { city }
+ │▷ -yt { text }
+ │▷ -spoti { text }
+ │▷ -tk { name }
+ │▷ -wiki { text }
+ │▷ -movie { mov name }
+ │▷ -github { name }
+ │▷ -mod { app name }
+ │▷ -weather { city }
  │
  ╰────────────────
  *━━━〈  🔍 Search 🔍  〉━━━*
  ╭────────────────
- │▷ .play
- │▷ .song
- │▷ .yts
- │▷ .lyrics
- │▷ .google
- │▷ .gimage
- │▷ .image
- │▷ .movie
- │▷ .wallpaper
- │▷ .happymod
- │▷ .anime, animestory
- │▷ .unvoice { mp3 to voice }
- │▷ .manga, ringtone 
+ │▷ -play
+ │▷ -song
+ │▷ -yts
+ │▷ -lyrics
+ │▷ -google
+ │▷ -gimage
+ │▷ -image
+ │▷ -movie
+ │▷ -wallpaper
+ │▷ -happymod
+ │▷ -anime, animestory
+ │▷ -unvoice { mp3 to voice }
+ │▷ -manga, ringtone 
  ╰────────────────
   *━━━〈  🎗 Others 🎗  〉━━━*
  ╭────────────────
  │   
- │▷ .animequote
- │▷ .quote
- │▷ .anime
- │▷ .covid 
- │▷ .darkjoke 
- │▷ .quotes
- │▷ .stickermeme,lovelycheck, uglycheck, charactercheck
- │▷ .reaction,lesbiancheck, hornycheck, prettycheck
- │▷ .truth,dare, couple, soulmate
- │▷ .handsomecheck, beautifulcheck, awesomecheck
- │▷ .greatcheck, gaycheck, cutecheck
+ │▷ -animequote
+ │▷ -quote
+ │▷ -anime
+ │▷ -covid 
+ │▷ -darkjoke 
+ │▷ -quotes
+ │▷ -stickermeme,lovelycheck, uglycheck, charactercheck
+ │▷ -reaction,lesbiancheck, hornycheck, prettycheck
+ │▷ -truth,dare, couple, soulmate
+ │▷ -handsomecheck, beautifulcheck, awesomecheck
+ │▷ -greatcheck, gaycheck, cutecheck
  │
  ╰────────────────
  *━━━〈  🈴 Weeb 🈴  〉━━━*
  ╭────────────────
- │▷ .crosplay, waifu     
- │▷ .loli, neko
- │▷ .ppcouple, feed
- │▷ .foxgirl, feed
- │▷ .meow, tickle
- │▷ .wallpaper, coffee
- │▷ .animenom, waifu3
- │▷ .neko2, feed
- │▷ .tickle, migumin,
- │▷ .awoo, animewallpaper2
+ │▷ -crosplay, waifu     
+ │▷ -loli, neko
+ │▷ -ppcouple, feed
+ │▷ -foxgirl, feed
+ │▷ -meow, tickle
+ │▷ -wallpaper, coffee
+ │▷ -animenom, waifu3
+ │▷ -neko2, feed
+ │▷ -tickle, migumin,
+ │▷ -awoo, animewallpaper2
  ╰────────────────
  ╭────────────────
- │*━━━〈  ❰Sketchy Bot 2022❱〉━━━*
+ │━━━〈❰Sketchy Bot 2022❱〉━━━
  ╰───────────────
  Powered by: *GingerBreadSketchy*`
     
