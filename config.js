@@ -26,7 +26,7 @@ global.prefa = ['-']
 global.location = "Naivasha, Kenya"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
-global.vidmenu = { url: 'https://telegra.ph/file/97ad903ba5a233f75a751.jpg' }
+global.vidmenu = {url:'https://telegra.ph/file/771a8538c82f72126954f.mp4'}
 global.websitex = "https://github.com/GingerBreadSketchy"
 global.lolhuman = "KaysaS"
 
