@@ -4989,7 +4989,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
-                    video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,
+                    video:fs.readFileSync('./system/ginger.mp4'),gifPlayback:true,
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: buttonshelpm,
